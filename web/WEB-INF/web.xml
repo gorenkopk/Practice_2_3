@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>task1</servlet-name>
+        <servlet-class>com.gorenko.pavel.controller.Controller</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>task1</servlet-name>
+        <url-pattern>/task1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>task2</servlet-name>
+        <servlet-class>com.gorenko.pavel.controller.ShowEmployees</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>task2</servlet-name>
+        <url-pattern>/task2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>remove</servlet-name>
+        <servlet-class>com.gorenko.pavel.controller.RemoveEmp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>remove</servlet-name>
+        <url-pattern>/remove</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addemp</servlet-name>
+        <servlet-class>com.gorenko.pavel.controller.AddEmp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addemp</servlet-name>
+        <url-pattern>/addemp</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <location>/pages/error.jsp</location>
+    </error-page>
+
+
+</web-app>

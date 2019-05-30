@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE datasources>
+<datasources>
+    <datasource>
+        <source-name>OracleConnection</source-name>
+        <connection-url>jdbc:oracle:thin:@localhost:1521:XE</connection-url>
+        <driver-class>oracle.jdbc.OracleDriver</driver-class>
+        <user-name>gorenko</user-name>
+        <password>Pasha1985</password>
+    </datasource>
+</datasources>
